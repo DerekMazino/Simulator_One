@@ -1,5 +1,5 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:simulador_examen/home/home_page.dart';
+import 'package:simulador_examen/home/examen_page.dart';
 import 'package:simulador_examen/home/widget/botton_widget.dart';
 
 class NavigationScreen extends StatefulWidget {
@@ -16,34 +16,31 @@ class _NavigationScreenState extends State<NavigationScreen> {
     return NavigationView(
       appBar: NavigationAppBar(
         height: 100,
-        backgroundColor: Color(0xFFA4B0BF),
-        actions: Container(
-          padding: const EdgeInsets.all(10),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: const [
-                  SizedBox(
-                    width: 30,
-                  ),
-                  RoundedButton(
-                    text: 'Datos Administrativos',
-                  ),
-                  RoundedButton(
-                    text: 'Historia Clínica',
-                  ),
-                  RoundedButton(
-                    text: 'Informes y Exámenes',
-                  ),
-                  RoundedButton(
-                    text: 'Agendas',
-                  )
-                ],
-              ),
-            ],
-          ),
+        backgroundColor: const Color(0xFFA4B0BF),
+        actions: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: const [
+                SizedBox(
+                  width: 30,
+                ),
+                RoundedButton(
+                  text: 'Datos Administrativos',
+                ),
+                RoundedButton(
+                  text: 'Historia Clínica',
+                ),
+                RoundedButton(
+                  text: 'Informes y Exámenes',
+                ),
+                RoundedButton(
+                  text: 'Agendas',
+                )
+              ],
+            ),
+          ],
         ),
         leading: const Center(
           child: FlutterLogo(size: 25),
@@ -61,7 +58,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           PaneItem(
             icon: const Icon(FluentIcons.add_work),
             title: const Text('LISTA DE TRABAJO'),
-            body: MyHomePage(),
+            body: const Text('Screen 2'),
           ),
           PaneItem(
             icon: const Icon(FluentIcons.check_list),
@@ -88,7 +85,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           PaneItem(
             icon: const Icon(FluentIcons.learning_app),
             title: const Text('INICIAR EXAMEN'),
-            body: MyHomePage(),
+            body: const ExamenPage(),
           ),
           PaneItem(
             icon: const Icon(FluentIcons.text_box),
@@ -105,18 +102,5 @@ class _NavigationScreenState extends State<NavigationScreen> {
         },
       ),
     );
-  }
-
-  Widget getContent(int currentIdex) {
-    switch (currentIdex) {
-      case 0:
-        return Text('index 0');
-      case 1:
-        return Text('index 1');
-      case 2:
-        return Text('index 2');
-      default:
-        return Text('index x');
-    }
   }
 }
