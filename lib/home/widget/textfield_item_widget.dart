@@ -30,9 +30,9 @@ class TextfieldItemWidget extends StatelessWidget {
               color: Colors.white,
               height: 25,
               child: Column(
-                children: [
+                children: const [
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 10),
                     child: SizedBox(
                       height: 20,
                       child: TextField(

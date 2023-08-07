@@ -1,8 +1,5 @@
-import 'package:desktop_window/desktop_window.dart';
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:flutter/material.dart';
 import 'package:simulador_examen/configs/colors.dart';
-import 'package:simulador_examen/home/examen_page.dart';
 import 'package:simulador_examen/home/navigation_screen.dart';
 
 void main() {

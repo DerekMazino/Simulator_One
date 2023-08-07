@@ -13,7 +13,6 @@ class RoundedButton extends StatelessWidget {
         child: ElevatedButton(
           onPressed: () {
             // Acción a realizar cuando se presiona el botón
-            print('Botón con bordes redondos presionado');
           },
           style: ElevatedButton.styleFrom(
             backgroundColor: const Color(0xFF457ABF),

@@ -1,5 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:simulador_examen/home/examen_page.dart';
+import 'package:simulador_examen/home/select_view_page.dart';
+import 'package:simulador_examen/home/scouts_page.dart';
 import 'package:simulador_examen/home/widget/botton_widget.dart';
 
 class NavigationScreen extends StatefulWidget {
@@ -58,7 +59,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           PaneItem(
             icon: const Icon(FluentIcons.add_work),
             title: const Text('LISTA DE TRABAJO'),
-            body: const Text('Screen 2'),
+            body: const ScoutsPage(),
           ),
           PaneItem(
             icon: const Icon(FluentIcons.check_list),
@@ -85,7 +86,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           PaneItem(
             icon: const Icon(FluentIcons.learning_app),
             title: const Text('INICIAR EXAMEN'),
-            body: const ExamenPage(),
+            body: SelectViewPage(),
           ),
           PaneItem(
             icon: const Icon(FluentIcons.text_box),

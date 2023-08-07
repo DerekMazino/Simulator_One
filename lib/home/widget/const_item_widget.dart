@@ -12,7 +12,7 @@ class ConstItemWidget extends StatelessWidget {
       padding: const EdgeInsets.all(2.0),
       child: Row(
         children: [
-          Expanded(
+          const Expanded(
             flex: 1,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -29,7 +29,7 @@ class ConstItemWidget extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 10),
                 width: 20,
                 color: colors.blue,
-                child: Text(
+                child: const Text(
                   '21349',
                   style: TextStyle(
                     color: Colors.white,
